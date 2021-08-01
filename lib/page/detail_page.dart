@@ -1,3 +1,4 @@
+import 'package:cantika/page/complete_page.dart';
 import 'package:cantika/theme.dart';
 import 'package:cantika/widget/size_info.dart';
 import 'package:flutter/material.dart';
@@ -100,35 +101,45 @@ class DetailPage extends StatelessWidget {
                         SizedBox(
                           height: 28,
                         ),
-                        Container(
-                          height: 45,
-                          width: MediaQuery.of(context).size.width -
-                              (2 * defaultMargin),
-                          decoration: BoxDecoration(
-                            color: orangeColor,
-                            borderRadius: BorderRadius.circular(9),
-                          ),
-                          child: Row(
-                            mainAxisAlignment: MainAxisAlignment.center,
-                            crossAxisAlignment: CrossAxisAlignment.center,
-                            children: [
-                              Image.asset(
-                                'assets/bag1.png',
-                                width: 22,
-                                height: 22,
-                                color: whiteColor,
-                              ),
-                              SizedBox(
-                                width: 8,
-                              ),
-                              Text(
-                                'Add to Cart',
-                                style: semiBoldTextStyle.copyWith(
-                                  fontSize: 16,
+                        InkWell(
+                          onTap: () {
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(builder: (context) {
+                                return CompletePage();
+                              }),
+                            );
+                          },
+                          child: Container(
+                            height: 45,
+                            width: MediaQuery.of(context).size.width -
+                                (2 * defaultMargin),
+                            decoration: BoxDecoration(
+                              color: orangeColor,
+                              borderRadius: BorderRadius.circular(9),
+                            ),
+                            child: Row(
+                              mainAxisAlignment: MainAxisAlignment.center,
+                              crossAxisAlignment: CrossAxisAlignment.center,
+                              children: [
+                                Image.asset(
+                                  'assets/bag1.png',
+                                  width: 22,
+                                  height: 22,
                                   color: whiteColor,
                                 ),
-                              ),
-                            ],
+                                SizedBox(
+                                  width: 8,
+                                ),
+                                Text(
+                                  'Add to Cart',
+                                  style: semiBoldTextStyle.copyWith(
+                                    fontSize: 16,
+                                    color: whiteColor,
+                                  ),
+                                ),
+                              ],
+                            ),
                           ),
                         )
                       ],
