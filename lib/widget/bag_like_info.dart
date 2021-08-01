@@ -1,3 +1,4 @@
+import 'package:cantika/page/detail_page.dart';
 import 'package:cantika/theme.dart';
 import 'package:flutter/material.dart';
 
@@ -19,18 +20,30 @@ class BagLikeInfo extends StatelessWidget {
       child: Row(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          Container(
-            height: 28,
-            width: 28,
-            decoration: BoxDecoration(
-              color: isBag ? orangeColor : whiteColor,
-              borderRadius: BorderRadius.circular(14),
-            ),
-            child: Center(
-              child: Icon(
-                Icons.shopping_bag_outlined,
-                color: isBag ? whiteColor : blackColor,
-                size: 15,
+          InkWell(
+            onTap: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) {
+                    return DetailPage();
+                  },
+                ),
+              );
+            },
+            child: Container(
+              height: 28,
+              width: 28,
+              decoration: BoxDecoration(
+                color: isBag ? orangeColor : whiteColor,
+                borderRadius: BorderRadius.circular(14),
+              ),
+              child: Center(
+                child: Icon(
+                  Icons.shopping_bag_outlined,
+                  color: isBag ? whiteColor : blackColor,
+                  size: 15,
+                ),
               ),
             ),
           ),
