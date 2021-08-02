@@ -1,6 +1,6 @@
 # cantika
 
-A new Hotel Flutter project.
+A new Online Shop Flutter project.
 
 design by BWA.
 
