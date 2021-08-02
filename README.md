@@ -1,16 +1,15 @@
 # cantika
 
-A new Flutter project.
+A new Hotel Flutter project.
+
+design by BWA.
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+This project is a starting point for a Flutter application. I Just implement that include in UI Design for my practice and many flaws of using some widget on it.
 
-A few resources to get you started if this is your first Flutter project:
+Big Thank's to BWA for the Design that can i use for my practice.
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+Here is some UI View.
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+<img width="630" alt="cv" src="https://user-images.githubusercontent.com/42954205/127799689-fef22341-310e-463b-be1e-da4b56ff7f9b.png">
